@@ -1,0 +1,25 @@
+build:
+  version_from_profile: ${build.version}
+  default_version: "{cipher}5e0a912c98a022f16a500cf05bbd2d79dee464554b1637ece5ea4ad9ae11e206"
+  duplicated_version: "a dup default" # hadi w li lfo9 kamlin ayakhod card machi app
+  version_from_profile2: ${build.version2}
+  default_version2: "a default"
+  duplicated_version2: "a dup default"
+
+
+server:
+  port: 9000
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ''
+  h2:
+    console:
+      enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true

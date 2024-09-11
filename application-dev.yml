@@ -1,0 +1,12 @@
+build:
+  version: "a dev"
+  version_in_dev_only: "{cipher}f67fbe79636fbc34d12642a658079257fd924e5afc9badef68643af1babfb9b00603f5bdf9d26541650603d304d48eb6"
+  duplicated_version: "a dup dev"
+  version_from_default: ${build.default_version}     # hadi w li lfo9 kamlin ayakhod card machi app
+  version2: "a dev"
+  version_in_dev_only2: "{cipher}f67fbe79636fbc34d12642a658079257fd924e5afc9badef68643af1babfb9b00603f5bdf9d26541650603d304d48eb6"
+  duplicated_version2: "a dup dev"
+  version_from_default2: ${build.default_version2}
+
+
+

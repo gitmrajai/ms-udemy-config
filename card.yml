@@ -1,0 +1,4 @@
+build:
+  version_from_profile: ${build.version}
+  default_version: "{cipher}49b9a35ad869609f276dcddd0d3de2f0cae240e0b5cdf80aeb66ae8d8fb38eac"
+  duplicated_version: "c dup default"
