@@ -1,5 +1,5 @@
 build:
-  version: "c dev"
+  version: "c dev up"
   version_in_dev_only: "{cipher}155f707b37a59fc58d8a8d7560416c2db238d698074ffdb8102e48c87e6b29d40fad11dc748a9d73ceed1d0e8d02a3ed"
   duplicated_version: "c dup dev"
   version_from_default: ${build.default_version}
