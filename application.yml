@@ -32,9 +32,10 @@ management:
   info:
     env:
       enabled: true
-#  endpoint:
-#    shutdown:
-#      enabled: true
+# hadi 4i la b4it narreter chi ms mn endpoint
+  endpoint:
+    shutdown:
+      enabled: true
 
 eureka:
   instance:
@@ -43,7 +44,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
-
-#endpoints:
-#  shutdown:
-#    enabled: true
+# hadi 4i la b4it narreter chi ms mn endpoint
+endpoints:
+  shutdown:
+    enabled: true
