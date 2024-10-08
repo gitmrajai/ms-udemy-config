@@ -1,0 +1,28 @@
+server:
+  port: 8070
+
+eureka:
+  # hado kan darhom ms mni 9albt f google makidirohomch
+#  instance:
+#    hostname: localhost
+  client:
+    # not fetch the service registry from the Eureka server. This is useful for standalone applications that do not need to discover other services.
+    # In scenarios where a microservice does not need to discover other services (for example, if it only provides functionality and doesn’t consume services from other microservices), you can disable fetching the registry to optimize performance and reduce startup time.
+    fetchRegistry: false  # default: true
+    # not register itself with the Eureka server
+    # In some scenarios, you might have certain microservices that don’t need to be registered with Eureka, such as admin services or batch jobs. For these cases, you can disable registration to reduce unnecessary network traffic and overhead.
+    registerWithEureka: false # default: true
+    # hado kan darhom ms mni 9albt f google makidirohomch
+#    serviceUrl:
+#      defaultZone: http://localhost:${server.port}/eureka/
+
+management:
+  # 7aydthom 7it kaynin f app.yml f config folder todo check wach aykhdm
+  #  endpoints:
+  #    web:
+  #      exposure:
+  #        include: "*"
+  endpoint:
+    health:
+      probes:
+        enabled: true
