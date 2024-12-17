@@ -1,0 +1,24 @@
+server:
+  port: 8072
+
+#spring:
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          # enables automatic route discovery based on registered services.
+#          # enabled: true
+#          # path kiwli ki9bl 4i lower case, wakha ykon chi service name upper case
+#          lower-case-service-id: true
+
+# enable the Spring Cloud Gateway actuator endpoint: you can expose detailed insights(ro2a) about your gateway routes via an actuator endpoint. you're explicitly enabling the /actuator/gateway endpoint.
+#Insights Provided:
+  #The /actuator/gateway endpoint provides useful information such as:
+  #Dynamic Routes: Details of routes that have been defined dynamically.
+  #Route Definitions: Static routes and their filters.
+  #Global Filters: Information on global filters applied to requests.
+  #Refresh Routes: Ability to refresh routes dynamically using POST /actuator/gateway/refresh.
+management:
+  endpoint:
+    gateway:
+      enabled: true

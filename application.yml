@@ -26,8 +26,8 @@ spring:
 management:
   endpoints:
     web:
-      exposure:
-        include: "*"
+      exposure: # This exposes the endpoint over HTTP.
+        include: "*" # todo khas n7aded dakchi, matalan gateway,health,info..., w matalan gateway mandirhach hna ndirha f gatewayserver.yml
   # wa9ila enable /actuator/info
   info:
     env:
@@ -44,7 +44,7 @@ eureka:
     prefer-ip-address: true # because we don't have any DNS mapping set up. when other microservice will try to connect with this service, eureka server is going to share the ip address details of this service
   client:
     serviceUrl:
-      defaultZone: http://localhost:8070/eureka/
+      defaultZone: http://localhost:8070/eureka/ # todo nraj3ha haka: http://{eureka-host}:{port}/eureka/
 # hadi 4i la b4it n arreter chi ms mn endpoint
 endpoints:
   shutdown:
