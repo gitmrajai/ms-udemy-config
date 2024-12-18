@@ -13,3 +13,14 @@ logging:
   level:
     com:
       mohamed: DEBUG
+
+management:
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
