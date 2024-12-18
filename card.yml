@@ -9,3 +9,7 @@ info:
     name: card
     description: card app
     version: 1.0.0
+logging:
+  level:
+    com:
+      mohamed: DEBUG

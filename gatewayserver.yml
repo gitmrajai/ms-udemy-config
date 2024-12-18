@@ -22,3 +22,9 @@ management:
   endpoint:
     gateway:
       enabled: true
+
+logging:
+  level:
+    com:
+      mohamed:
+        gatewayserver: DEBUG
